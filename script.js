@@ -51,6 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
             ctaBox.style.display = 'none';
             successPanel.style.display = 'block';
             createConfetti();
+            // Open WhatsApp link in new tab after showing success
+            window.open("https://wa.me/34601108311?text=Hola%20Pau%2C%20hemos%20visto%20tu%20propuesta%20para%20Arenal%20Backpackers%20Resort%20y%20nos%20interesa%20comenzar%20el%20acuerdo%20de%20canje.", "_blank");
         });
     }
 
