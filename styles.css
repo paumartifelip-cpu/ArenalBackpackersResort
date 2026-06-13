@@ -945,6 +945,65 @@ a {
     font-size: 0.82rem;
 }
 
+/* PAU INSTAGRAM METRICS */
+.pau-metrics {
+    margin-top: 50px;
+    padding: 35px;
+    background: #ffffff;
+    border: 2px solid var(--color-jungle-dark);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 4px 4px 0 var(--color-jungle-dark);
+    text-align: center;
+}
+
+.pau-metrics h3 {
+    font-family: var(--font-headings);
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--color-jungle-dark);
+    margin-bottom: 25px;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.metric-card {
+    background: #fdfdfb;
+    border: 2px solid var(--color-jungle-dark);
+    border-radius: var(--border-radius-md);
+    padding: 25px;
+    text-align: center;
+    transition: var(--transition-smooth);
+}
+
+.metric-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 3px 3px 0 var(--color-jungle-dark);
+}
+
+.metric-icon {
+    font-size: 2rem;
+    color: var(--color-accent-coral);
+    margin-bottom: 12px;
+}
+
+.metric-number {
+    font-family: var(--font-headings);
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--color-jungle-dark);
+    margin-bottom: 8px;
+}
+
+.metric-label {
+    font-size: 0.95rem;
+    color: var(--color-text-gray);
+    font-weight: 600;
+}
+
 /* 13. RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
     .blocks-grid {
@@ -1046,5 +1105,18 @@ a {
     
     .capacitacion-bridge {
         padding: 20px;
+    }
+
+    /* Mobile metrics overrides */
+    .metrics-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .pau-metrics {
+        margin-top: 35px;
+        padding: 25px;
+    }
+    .metric-number {
+        font-size: 1.8rem;
     }
 }
