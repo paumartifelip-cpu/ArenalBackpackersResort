@@ -193,6 +193,15 @@ a {
     font-weight: 800;
     line-height: 1.15;
     color: var(--color-jungle-dark);
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-family: var(--font-headings);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--color-jungle-dark);
     margin-bottom: 18px;
 }
 
@@ -545,12 +554,13 @@ a {
     margin-top: 4px;
 }
 
-.pau-web-link {
+.pau-web-link, .pau-youtube-link {
     font-size: 0.95rem;
     font-weight: 700;
+    margin-top: 12px;
 }
 
-.pau-web-link a {
+.pau-web-link a, .pau-youtube-link a {
     color: var(--color-jungle-light);
     text-decoration: underline;
 }
@@ -972,6 +982,11 @@ a {
     
     .hero-section h1 {
         font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
     }
     
     .hero-illustration {

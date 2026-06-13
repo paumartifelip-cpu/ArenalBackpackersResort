@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. CTA & SUCCESS TRIGGER
     const btnAccept = document.getElementById('btn-accept');
-    const btnDownload = document.getElementById('btn-download');
     const ctaBox = document.querySelector('.cta-box');
     const successPanel = document.getElementById('success-panel');
     const btnResetSuccess = document.getElementById('btn-reset-success');
@@ -60,13 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btnResetSuccess.addEventListener('click', () => {
             successPanel.style.display = 'none';
             ctaBox.style.display = 'block';
-        });
-    }
-
-    if (btnDownload) {
-        btnDownload.addEventListener('click', () => {
-            alert("Se abrirá la ventana de impresión de tu navegador. Elige la opción 'Guardar como PDF' para descargar el acuerdo de canje.");
-            window.print();
         });
     }
 
